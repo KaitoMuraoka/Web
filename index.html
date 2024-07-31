@@ -7,15 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
     <link rel="stylesheet" href="sets/CSS/styles.css">
+    <link rel="stylesheet" href="sets/CSS/accordion.css">
+    <link rel="stylesheet" href="sets/CSS/speaklink.css"
 
-    <!-- BOX ICONs -->
-    <!-- <link href='https://unpkg.com/boxicons@latest/css/boxicons.min.css' rel='stylesheet'> -->
     <!-- REMIX ICON-->
     <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
-    <!-- <script src="https://unpkg.com/@phosphor-icons/web"></script> -->
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"rel="stylesheet"/>
 
 
     <title>とんとんぼ's website</title>
@@ -160,48 +157,161 @@
         <section class="portfolio section" id="portfolio">
             <h2 class="section-title">Portfolio</h2>
 
-            <div class="portfolio__container bd-grid">
-                <div class="portfolio__img">
-                    <p>Activities</p>
-                    <img src="sets/img/work2.jpg" alt="">
-                    <div class="portfolio__link">
-                        <a href="" class="portfolio__link-name">View details</a>
-                    </div>
-                </div>
+            <div class="container">
+                <label class="accordion accordion--1" for="open-1">
+                  <input class="accordion__open" id="open-1" type="radio" name="acoordion-1">
+                  <input class="accordion__close" id="close-1" type="radio" name="acoordion-1">
+                  <div class="accordion__tab">CHECK!</div>
+                  <div class="accordion__wrapper">
+                    <dl class="accordion__box">
+                      <dt class="accordion__patition">
+                        <span class="accordion__number">01</span>
+                        <span class="accordion__title">PasswordBox</span>
+                      </dt>
+                      <dd class="accordion__text">
+                        パスワードを生成・管理することができるアプリです。既存のパスワードマネージャアプリは、パスワードを管理する機能しかないことに気づき、ユーザーが自由にパスワードを管理した方が良いのではないかと考え作成しました。
 
-                <div class="portfolio__img">
-                    <p>WorkHistory</p>
-                    <img src="sets/img/work2.jpg" alt="">
-                    <div class="portfolio__link">
-                        <a href="https://github.com/KaitoMuraoka/JapanDice" class="portfolio__link-name">
-                            View details
+                        <a href="https://github.com/KaitoMuraoka/PasswordBox" class="about__social-icon">
+                            <i class="ri-github-fill"></i>
                         </a>
-                    </div>
-                </div>
-            </div>
+                        <a href="https://qiita.com/KaitoMuraoka/items/3834482dac0a860a6b44" class="about__social-icon">
+                            <i class="ri-article-line"></i>
+                        </a>
+                        <a href="https://github.com/KaitoMuraoka/PasswordBox" class="about__social-icon">
+                            <i class="ri-app-store-line"></i>
+                        </a>
+                    </dd>
+                    </dl>
+                  </div>
+                  <label for="close-1" class="accordion__button">
+                    <span class="accordion__buttonText">CLOSE</span>
+                  </label>
+                </label>
+              </div>
         </section>
 
         <section class="about section" id="portfolio">
+            <h2 class="section-title">Speaking Experience</h2>
+
+            <div class="container">
+
+                <label class="speaklink speaklink--1" for="open-speaklink-1">
+                  <input class="speaklink__open" id="open-speaklink-1" type="radio" name="speaklink-1">
+                  <input class="speaklink__close" id="close-speaklink-1" type="radio" name="speaklink-1">
+                  <div class="speaklink__tab">CHECK!</div>
+                  <div class="speaklink__wrapper">
+                    <dl class="speaklink__box">
+                      <dt class="speaklink__patition">
+                        <span class="speaklink__number">01</span>
+                        <span class="speaklink__title">Swift 愛好会 vol.74@オンライン</span>
+                      </dt>
+                      <dd class="speaklink__text">
+                        社会人になって初めての登壇でした。「JSONEncoderで詰まった話」についてお話ししました。<br>
+
+                        <a href="https://love-swift.connpass.com/event/283601/" class="about__social-icon">
+                            <i class="ri-links-line"></i>
+                        </a>
+                        <a href="https://note.com/ktombow1110/n/n5bc336fd1287" class="about__social-icon">
+                            <i class="ri-article-line"></i>
+                        </a>
+                    </dd>
+                    </dl>
+                  </div>
+                  <label for="close-speaklink-1" class="speaklink__button">
+                    <span class="speaklink__buttonText">CLOSE</span>
+                  </label>
+                </label>
+              
+                <label class="speaklink speaklink--2" for="open-speaklink-2">
+                  <input class="speaklink__open" id="open-speaklink-2" type="radio" name="speaklink-2">
+                  <input class="speaklink__close" id="close-speaklink-2" type="radio" name="speaklink-2">
+                  <div class="speaklink__tab">CHECK!</div>
+                  <div class="speaklink__wrapper">
+                    <dl class="speaklink__box">
+                      <dt class="speaklink__patition">
+                        <span class="speaklink__number">02</span>
+                        <span class="speaklink__title">集まれSwift好き！Swift愛好会スピンオフ WWDC24セッション要約会 @ DeNA</span>
+                      </dt>
+                      <dd class="speaklink__text">
+                        Swift愛好会スピンオフの WWDC24 の要約会に Xcode16 について登壇しました。<br>
+
+                        <a href="https://love-swift.connpass.com/event/319801/" class="about__social-icon">
+                            <i class="ri-links-line"></i>
+                        </a>
+                        <a href="#" class="about__social-icon">
+                            <i class="ri-article-line"></i>
+                        </a>
+                    </dd>
+                    </dl>
+                  </div>
+                  <label for="close-speaklink-2" class="speaklink__button">
+                    <span class="speaklink__buttonText">CLOSE</span>
+                  </label>
+                </label>
+        </section>
+
+        <section class="portfolio section" id="portfolio">
             <h2 class="section-title">Work History</h2>
 
-            <div class="portfolio__container bd-grid">
-                <div class="portfolio__img">
-                    <p>Activities</p>
-                    <img src="sets/img/work2.jpg" alt="">
-                    <div class="portfolio__link">
-                        <a href="" class="portfolio__link-name">View details</a>
-                    </div>
-                </div>
+            <div class="container">
 
-                <div class="portfolio__img">
-                    <img src="sets/img/work2.jpg" alt="">
-                    <div class="portfolio__link">
-                        <a href="https://github.com/KaitoMuraoka/JapanDice" class="portfolio__link-name">
-                            View details
-                        </a>
-                    </div>
-                </div>
-            </div>
+    
+                <label class="accordion accordion--1" for="open-1">
+                  <input class="accordion__open" id="open-1" type="radio" name="acoordion-1">
+                  <input class="accordion__close" id="close-1" type="radio" name="acoordion-1">
+                  <div class="accordion__tab">CHECK!</div>
+                  <div class="accordion__wrapper">
+                    <dl class="accordion__box">
+                      <dt class="accordion__patition">
+                        <span class="accordion__number">01</span>
+                        <span class="accordion__title">CSSの上級者になるには？</span>
+                      </dt>
+                      <dd class="accordion__text">実務をたくさん経験しましょう。新規の制作だけでなく、既存サイトの改修作業もおすすめです。他人が書いた自分にとっては不慣れなソースコードを、見て触れて考えて手を加えるという事自体がスキルアップに繋がります。</dd>
+                    </dl>
+                  </div>
+                  <label for="close-1" class="accordion__button">
+                    <span class="accordion__buttonText">CLOSE</span>
+                  </label>
+                </label>
+              
+              
+                <label class="accordion accordion--2" for="open-2">
+                  <input class="accordion__open" id="open-2" type="radio" name="acoordion-2">
+                  <input class="accordion__close" id="close-2" type="radio" name="acoordion-2">
+                  <div class="accordion__tab">CHECK!</div>
+                  <div class="accordion__wrapper">
+                    <dl class="accordion__box">
+                      <dt class="accordion__patition">
+                        <span class="accordion__number">02</span>
+                        <span class="accordion__title">CSSの天才になるには？</span>
+                      </dt>
+                      <dd class="accordion__text">日頃から最新の情報をキャッチアップし、様々なプロパティや値、それぞれの機能や効果を正確に把握しましょう。より洗練された美しく無駄のないコードを書くために、常に鍛錬を怠らずさらに多くの経験を積み重ねましょう。</dd>
+                    </dl>
+                  </div>
+                  <label for="close-2" class="accordion__button">
+                    <span class="accordion__buttonText">CLOSE</span>
+                  </label>
+                </label>
+              
+              
+                <label class="accordion accordion--3" for="open-3">
+                  <input class="accordion__open" id="open-3" type="radio" name="acoordion-3">
+                  <input class="accordion__close" id="close-3" type="radio" name="acoordion-3">
+                  <div class="accordion__tab">CHECK!</div>
+                  <div class="accordion__wrapper">
+                    <dl class="accordion__box">
+                      <dt class="accordion__patition">
+                        <span class="accordion__number">03</span>
+                        <span class="accordion__title">CSSの変態になるには？</span>
+                      </dt>
+                      <dd class="accordion__text">何かデザインを見つけたら、まずはとにかくそれをCSSで実装できないか妄想しましょう。ご飯を食べてるときや、お風呂に入っているときはもちろん、ベッドに入ってからは意識が飛ぶまでひたすら思考と妄想をし続けましょう。</dd>
+                    </dl>
+                  </div>
+                  <label for="close-3" class="accordion__button">
+                    <span class="accordion__buttonText">CLOSE</span>
+                  </label>
+                </label>
+              </div>
         </section>
 
         <!--===== CONTACT =====-->
