@@ -492,7 +492,6 @@ img {
   }
 }
 
-
 /* COFFEE */
 .container {
   position: relative;
@@ -505,7 +504,7 @@ img {
   background: linear-gradient(to right, #f9f9f9, #d9d9d9);
   border-bottom-left-radius: 45%;
   border-bottom-right-radius: 45%;
-  left: 40%;
+  left: 42%;
 }
 .top {
   position: absolute;
@@ -617,3 +616,4 @@ img {
     transform: scaleX(10) translateY(-300px);
   }
 }
+
