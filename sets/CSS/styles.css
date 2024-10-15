@@ -466,6 +466,7 @@ img {
   }
   .contact__form {
     width: 380px;
+    margin: auto;
   }
 
   .footer__container {
