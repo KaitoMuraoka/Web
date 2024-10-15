@@ -3,13 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="sets/img/tonfly.png">
     <!-- CSS -->
     <link rel="stylesheet" href="sets/CSS/styles.css">
     <link rel="stylesheet" href="sets/CSS/accordion.css">
-    <link rel="stylesheet" href="sets/CSS/speaklink.css"
+    <link rel="stylesheet" href="sets/CSS/speaklink.css">
+
+    <!-- Meta Infomation -->
+    <meta name="author" content="Kaito Muraoka"/>
+    <meta name="description" content="このサイトは私、とんとんぼのポートフォリオサイトです。" />
+    <meta property="og:image" content="https://tontonbo.netlify.app/sets/img/tonfly.png" />
+    <meta
+  property="og:description"
+  content="このサイトは私、とんとんぼこと Kaito Muraoka のポートフォリオサイトになります。コンタクトはSNSなどからお願いします。" />
 
     <!-- REMIX ICON -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"rel="stylesheet"/>
@@ -56,7 +63,7 @@
                 <div class="home__img">
                     <div class="container">
                         <div class="plate"></div>
-                        <div class="cup">
+                        <div class="cup" title="Welcome! Have a cup of coffee.">
                             <div class="top">
                                 <div class="vapour">
                                     <span style="--i:1"></span>
@@ -109,17 +116,20 @@
                     </p>
 
                     <div class="about__social">
-                        <a href="https://twitter.com/Ktombow1110" class="about__social-icon">
+                        <a href="https://twitter.com/Ktombow1110" class="about__social-icon" title="主にここに生息しています">
                             <i class="ri-twitter-x-fill"></i>
                         </a>
-                        <a href="https://github.com/KaitoMuraoka" class="about__social-icon">
+                        <a href="https://github.com/KaitoMuraoka" class="about__social-icon" title="第2の住処">
                             <i class="ri-github-fill"></i>
                         </a>
-                        <a href="https://qiita.com/KaitoMuraoka" class="about__social-icon">
-                            <i class="ri-article-line"></i>
+                        <a href="https://www.linkedin.com/in/ktombow1110/" class="about__social-icon" title="お仕事の連絡はこちらから">
+                            <i class="ri-linkedin-box-fill"></i>
                         </a>
-                        <a href="https://apps.apple.com/jp/developer/kaito-muraoka/id1596462135" class="about__social-icon">
+                        <a href="https://apps.apple.com/jp/developer/kaito-muraoka/id1596462135" class="about__social-icon" title="AppStore へのリンク">
                             <i class="ri-app-store-line"></i>
+                        </a>
+                        <a href="https://qiita.com/KaitoMuraoka" class="about__social-icon" title="Tech ブログ「Qiita」へのリンク">
+                            <i class="ri-article-line"></i>
                         </a>
                     </div>
                 </div>
@@ -133,16 +143,16 @@
             <div class="skills__container bd-grid">
                 <div class="skills__box">
                     <h3 class="skills__subtitle">Development</h3>
-                    <span class="skills__name">iOS</span>
-                    <span class="skills__name">Swift</span>
-                    <span class="skills__name">UIKit</span>
-                    <span class="skills__name">SwiftUI</span>
-                    <span class="skills__name">Android</span>
-                    <span class="skills__name">Java</span>
-                    <span class="skills__name">Kotlin</span>
-                    <span class="skills__name">Flutter</span>
-                    <span class="skills__name">GitHub Action</span>
-                    <span class="skills__name">Firebase</span>
+                    <span class="skills__name" title="経験：約2年">iOS</span>
+                    <span class="skills__name" title="経験：約2年">Swift</span>
+                    <span class="skills__name" title="経験：約2年">UIKit</span>
+                    <span class="skills__name" title="経験：約2年">SwiftUI</span>
+                    <span class="skills__name" title="経験：約2年">Android</span>
+                    <span class="skills__name" title="経験：約2年">Java</span>
+                    <span class="skills__name" title="経験：約2年">Kotlin</span>
+                    <span class="skills__name" title="経験：約半年">Flutter</span>
+                    <span class="skills__name" title="経験：約半年">GitHub Action</span>
+                    <span class="skills__name" title="経験：約2年">Firebase</span>
                 </div>
 
                 <div class="skills__img">
@@ -167,7 +177,7 @@
                         <span class="accordion__title">PasswordBox</span>
                       </dt>
                       <dd class="accordion__text">
-                        パスワードを生成・管理することができるアプリです。既存のパスワードマネージャアプリは、パスワードを管理する機能しかないことに気づき、ユーザーが自由にパスワードを管理した方が良いのではないかと考え作成しました。
+                        パスワードを生成・管理することができるアプリです。既存のパスワードマネージャアプリは、パスワードを管理する機能しかないことに気づき、ユーザーが自由にパスワードを管理した方が良いのではないかと考え作成しました。 <br>
 
                         <a href="https://github.com/KaitoMuraoka/PasswordBox" class="about__social-icon">
                             <i class="ri-github-fill"></i>
@@ -182,6 +192,33 @@
                     </dl>
                   </div>
                   <label for="close-1" class="accordion__button">
+                    <span class="accordion__buttonText">CLOSE</span>
+                  </label>
+                </label>
+
+                <label class="accordion accordion--2" for="open-2">
+                  <input class="accordion__open" id="open-2" type="radio" name="acoordion-2">
+                  <input class="accordion__close" id="close-2" type="radio" name="acoordion-2">
+                  <div class="accordion__tab">CHECK!</div>
+                  <div class="accordion__wrapper">
+                    <dl class="accordion__box">
+                      <dt class="accordion__patition">
+                        <span class="accordion__number">02</span>
+                        <span class="accordion__title">Osushi Mobile</span>
+                      </dt>
+                      <dd class="accordion__text">
+                        <a href="https://ios-osushi.github.io" class="accordion__text">iOS Osushi</a> のモバイルアプリ版です。iOS Osushi に投稿された記事の閲覧が可能です。お気に入り登録するとオフラインでも閲覧ができます。 <br>
+
+                        <a href="https://github.com/ios-osushi/Osushi-iOS?tab=readme-ov-file" class="about__social-icon">
+                            <i class="ri-github-fill"></i>
+                        </a>
+                        <a href="https://apps.apple.com/jp/app/osushi/id6480398872" class="about__social-icon">
+                            <i class="ri-app-store-line"></i>
+                        </a>
+                    </dd>
+                    </dl>
+                  </div>
+                  <label for="close-2" class="accordion__button">
                     <span class="accordion__buttonText">CLOSE</span>
                   </label>
                 </label>
@@ -375,6 +412,7 @@
                 <h2 class="footer__title">FOLLOW</h2>
                 <a href="https://github.com/KaitoMuraoka" class="footer__social"><i class="ri-github-fill"></i></a>
                 <a href="https://twitter.com/Ktombow1110" class="footer__social"><i class="ri-twitter-x-fill"></i></a>
+                <a href="https://www.linkedin.com/in/ktombow1110/" class="footer__social"><i class="ri-linkedin-box-fill"></i></a>
                 <a href="https://qiita.com/KaitoMuraoka" class="footer__social"><i class="ri-article-line"></i></a>
                 <a href="https://apps.apple.com/jp/developer/kaito-muraoka/id1596462135" class="footer__social"><i class="ri-app-store-line"></i></a>
             </div>
