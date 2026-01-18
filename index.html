@@ -6,11 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/sets/img/tonfly.ico">
     <link rel="apple-touch-icon" href="/sets/img/tonfly.ico">
-    <!-- CSS -->
-    <link rel="stylesheet" href="sets/CSS/styles.css">
-    <link rel="stylesheet" href="sets/CSS/accordion.css">
-    <link rel="stylesheet" href="sets/CSS/speaklink.css">
-
     <!-- Meta Infomation -->
     <meta name="author" content="Kaito Muraoka"/>
     <meta name="description" content="このサイトは私、とんとんぼのポートフォリオサイトです。" />
@@ -25,414 +20,46 @@
     <meta name="twitter:description" content="イエーイ！みってるー✌️" />
     <meta name="twitter:image" content="/sets/img/tonfly.png" />
 
-    <!-- REMIX ICON -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"rel="stylesheet"/>
-
-
-    <title>とんとんぼ's website</title>
+    <title>とんとんぼ's web</title>
 </head>
-
 <body>
-    <header class="l-header">
-        <nav class="nav bd-grid">
-            <div>
-                <a href="#" class="nav__logo">とんとんぼ</a>
-            </div>
+  <h1>とんとんぼ's web</h1>
+  <p>2023年4月からモバイルアプリエンジニアとして、iOSやAndroidのアプリ開発をしています。</p>
+  <p>主に、iOSアプリケーションの開発に強みを持って開発そています。モバイルアプリの力で社会課題を解決し、より楽しくより便利な世の中になるよう日々活動しています。</p>
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                    <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
-                    <!-- <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li> -->
-                </ul>
-            </div>
+  <h2>Links</h2>
+  <ul>
+    <li><a href="#">GitHub</a></li>
+    <li><a href="#">X</a></li>
+    <li><a href="#">Qiita</a></li>
+    <li><a href="https://apps.apple.com/jp/developer/kaito-muraoka/id1596462135">AppStore</a></li>
+  </ul>
 
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
-            </div>
-        </nav>
+  <h2>Skills</h2>
 
-    </header>
+xg  <dl>
+    <dt>iOS</dt>
+    <dd>一番好きな技術です。2023年4月から開発をしています。
+      <ul>
+	<li>Swift</li>
+	<li>UIKit</li>
+	<li>SwiftUI</li>
+	<li>Swift Concurrency</li>
+	<li>SwiftPM</li>
+      </ul>
+    </dd>
+  </dl>
 
-    <main class="l-main">
-        <!--===== HOME =====-->
-        <section class="home" id="home">
-            <div class="home__container bd-grid">
-                <h1 class="home__title"><span>HE</span><br>LLO.</h1>
+  <dt>Android</dt>
+  <dd>iOSの次に経験のある技術。</dd>
+  <ul>
+    <li>Kotlin</li>
+  </ul>
 
-                <div class="home__scroll">
-                    <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt'></i>Scroll down</a>
-                </div>
+  <dt>Ruby on Rails</dt>
 
-                <!--===== COFFEE ======-->
-                <div class="home__img">
-                    <div class="container">
-                        <div class="plate"></div>
-                        <div class="cup" title="Welcome! Have a cup of coffee.">
-                            <div class="top">
-                                <div class="vapour">
-                                    <span style="--i:1"></span>
-                                    <span style="--i:3"></span>
-                                    <span style="--i:16"></span>
-                                    <span style="--i:5"></span>
-                                    <span style="--i:13"></span>
-                                    <span style="--i:20"></span>
-                                    <span style="--i:6"></span>
-                                    <span style="--i:7"></span>
-                                    <span style="--i:10"></span>
-                                    <span style="--i:8"></span>
-                                    <span style="--i:17"></span>
-                                    <span style="--i:11"></span>
-                                    <span style="--i:12"></span>
-                                    <span style="--i:14"></span>
-                                    <span style="--i:2"></span>
-                                    <span style="--i:9"></span>
-                                    <span style="--i:15"></span>
-                                    <span style="--i:4"></span>
-                                    <span style="--i:19"></span>
-                                </div>
-                                <div class="circle">
-                                    <div class="tea"></div>
-                                </div>
-                            </div>
-                            <div class="handle"></div>
-                        </div>
-                    </div>
-                </div>
+  <dt>バージョン管理システム</dt>
+  <dd>
 
-            </div>
-        </section>
-
-        <!--===== ABOUT =====-->
-        <section class="about section" id="about">
-            <h2 class="section-title">About</h2>
-
-            <div class="about__container bd-grid">
-                <div class="about__img">
-                    <img src="sets/img/tonfly.png" alt="">
-                </div>
-
-                <div>
-                    <h2 class="about__subtitle">I'am とんとんぼ</h2>
-                    <span class="about__profession">Mobile Developer</span>
-                    <p class="about__text">
-                        23年4月からモバイルアプリエンジニアとして iOSとAndroidのアプリケーションの開発をさせていただいています。主に iOS アプリケーションの開発に強みを持って開発しています。
-                        モバイルアプリの力で社会課題を解決し、より楽しくより便利になるような世の中を作りたいと思い、日々活動しています。
-                    </p>
-
-                    <div class="about__social">
-                        <a href="https://twitter.com/Ktombow1110" class="about__social-icon" title="主にここに生息しています">
-                            <i class="ri-twitter-x-fill"></i>
-                        </a>
-                        <a href="https://github.com/KaitoMuraoka" class="about__social-icon" title="第2の住処">
-                            <i class="ri-github-fill"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/ktombow1110/" class="about__social-icon" title="お仕事の連絡はこちらから">
-                            <i class="ri-linkedin-box-fill"></i>
-                        </a>
-                        <a href="https://apps.apple.com/jp/developer/kaito-muraoka/id1596462135" class="about__social-icon" title="AppStore へのリンク">
-                            <i class="ri-app-store-line"></i>
-                        </a>
-                        <a href="https://qiita.com/KaitoMuraoka" class="about__social-icon" title="Tech ブログ「Qiita」へのリンク">
-                            <i class="ri-article-line"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--===== SKILLS =====-->
-        <section class="skills section" id="skills">
-            <h2 class="section-title">Skills</h2>
-
-            <div class="skills__container bd-grid">
-                <div class="skills__box">
-                    <h3 class="skills__subtitle">Development</h3>
-                    <span class="skills__name" title="経験：約2年">iOS</span>
-                    <span class="skills__name" title="経験：約2年">Swift</span>
-                    <span class="skills__name" title="経験：約2年">UIKit</span>
-                    <span class="skills__name" title="経験：約2年">SwiftUI</span>
-                    <span class="skills__name" title="経験：約2年">Android</span>
-                    <span class="skills__name" title="経験：約2年">Java</span>
-                    <span class="skills__name" title="経験：約2年">Kotlin</span>
-                    <span class="skills__name" title="経験：約半年">Flutter</span>
-                    <span class="skills__name" title="経験：約半年">GitHub Action</span>
-                    <span class="skills__name" title="経験：約2年">Firebase</span>
-                </div>
-
-                <div class="skills__img">
-                    <img src="sets/img/skill.jpg" alt="">
-                </div>
-            </div>
-        </section>
-
-        <!--===== PORTFOLIO =====-->
-        <section class="portfolio section" id="portfolio">
-            <h2 class="section-title">Portfolio</h2>
-
-            <div class="accordion__container about__text">
-                <label class="accordion accordion--1" for="open-1">
-                  <input class="accordion__open" id="open-1" type="radio" name="acoordion-1">
-                  <input class="accordion__close" id="close-1" type="radio" name="acoordion-1">
-                  <div class="accordion__tab">CHECK!</div>
-                  <div class="accordion__wrapper">
-                    <dl class="accordion__box">
-                      <dt class="accordion__patition">
-                        <span class="accordion__number">01</span>
-                        <span class="accordion__title">PasswordBox</span>
-                      </dt>
-                      <dd class="accordion__text">
-                        パスワードを生成・管理することができるアプリです。既存のパスワードマネージャアプリは、パスワードを管理する機能しかないことに気づき、ユーザーが自由にパスワードを管理した方が良いのではないかと考え作成しました。 <br>
-
-                        <a href="https://github.com/KaitoMuraoka/PasswordBox" class="about__social-icon">
-                            <i class="ri-github-fill"></i>
-                        </a>
-                        <a href="https://qiita.com/KaitoMuraoka/items/3834482dac0a860a6b44" class="about__social-icon">
-                            <i class="ri-article-line"></i>
-                        </a>
-                        <a href="https://apps.apple.com/jp/app/passwordbox/id6520392403" class="about__social-icon">
-                            <i class="ri-app-store-line"></i>
-                        </a>
-                    </dd>
-                    </dl>
-                  </div>
-                  <label for="close-1" class="accordion__button">
-                    <span class="accordion__buttonText">CLOSE</span>
-                  </label>
-                </label>
-
-                <label class="accordion accordion--2" for="open-2">
-                  <input class="accordion__open" id="open-2" type="radio" name="acoordion-2">
-                  <input class="accordion__close" id="close-2" type="radio" name="acoordion-2">
-                  <div class="accordion__tab">CHECK!</div>
-                  <div class="accordion__wrapper">
-                    <dl class="accordion__box">
-                      <dt class="accordion__patition">
-                        <span class="accordion__number">02</span>
-                        <span class="accordion__title">Osushi Mobile</span>
-                      </dt>
-                      <dd class="accordion__text">
-                        <a href="https://ios-osushi.github.io" class="accordion__text">iOS Osushi</a> のモバイルアプリ版です。iOS Osushi に投稿された記事の閲覧が可能です。お気に入り登録するとオフラインでも閲覧ができます。 <br>
-
-                        <a href="https://github.com/ios-osushi/Osushi-iOS?tab=readme-ov-file" class="about__social-icon">
-                            <i class="ri-github-fill"></i>
-                        </a>
-                        <a href="https://apps.apple.com/jp/app/osushi/id6480398872" class="about__social-icon">
-                            <i class="ri-app-store-line"></i>
-                        </a>
-                    </dd>
-                    </dl>
-                  </div>
-                  <label for="close-2" class="accordion__button">
-                    <span class="accordion__buttonText">CLOSE</span>
-                  </label>
-                </label>
-              </div>
-        </section>
-
-        <section class="about section" id="portfolio">
-            <h2 class="section-title">Speaking Experience</h2>
-
-            <div class="accordion__container about__text">
-
-                <label class="speaklink speaklink--1" for="open-speaklink-1">
-                  <input class="speaklink__open" id="open-speaklink-1" type="radio" name="speaklink-1">
-                  <input class="speaklink__close" id="close-speaklink-1" type="radio" name="speaklink-1">
-                  <div class="speaklink__tab">CHECK!</div>
-                  <div class="speaklink__wrapper">
-                    <dl class="speaklink__box">
-                      <dt class="speaklink__patition">
-                        <span class="speaklink__number">01</span>
-                        <span class="speaklink__title">Swift 愛好会 vol.74@オンライン</span>
-                      </dt>
-                      <dd class="speaklink__text">
-                        社会人になって初めての登壇でした。「JSONEncoderで詰まった話」についてお話ししました。<br>
-
-                        <a href="https://love-swift.connpass.com/event/283601/" class="about__social-icon">
-                            <i class="ri-links-line"></i>
-                        </a>
-                        <a href="https://note.com/ktombow1110/n/n5bc336fd1287" class="about__social-icon">
-                            <i class="ri-article-line"></i>
-                        </a>
-                    </dd>
-                    </dl>
-                  </div>
-                  <label for="close-speaklink-1" class="speaklink__button">
-                    <span class="speaklink__buttonText">CLOSE</span>
-                  </label>
-                </label>
-              
-                <label class="speaklink speaklink--2" for="open-speaklink-2">
-                  <input class="speaklink__open" id="open-speaklink-2" type="radio" name="speaklink-2">
-                  <input class="speaklink__close" id="close-speaklink-2" type="radio" name="speaklink-2">
-                  <div class="speaklink__tab">CHECK!</div>
-                  <div class="speaklink__wrapper">
-                    <dl class="speaklink__box">
-                      <dt class="speaklink__patition">
-                        <span class="speaklink__number">02</span>
-                        <span class="speaklink__title">集まれSwift好き！Swift愛好会スピンオフ WWDC24セッション要約会 @ DeNA</span>
-                      </dt>
-                      <dd class="speaklink__text">
-                        Swift愛好会スピンオフの WWDC24 の要約会に Xcode16 について登壇しました。<br>
-
-                        <a href="https://love-swift.connpass.com/event/319801/" class="about__social-icon">
-                            <i class="ri-links-line"></i>
-                        </a>
-                        <a href="https://note.com/ktombow1110/n/n09c900e6e125" class="about__social-icon">
-                            <i class="ri-article-line"></i>
-                        </a>
-                    </dd>
-                    </dl>
-                  </div>
-                  <label for="close-speaklink-2" class="speaklink__button">
-                    <span class="speaklink__buttonText">CLOSE</span>
-                  </label>
-                </label>
-        </section>
-
-        <section class="portfolio section" id="portfolio">
-            <h2 class="section-title">Work History</h2>
-
-            <div class="accordion__container about__text">
-    
-                <label class="accordion accordion--1" for="workhistory-open-1">
-                  <input class="accordion__open" id="workhistory-open-1" type="radio" name="acoordion-1">
-                  <input class="accordion__close" id="workhistory-close-1" type="radio" name="acoordion-1">
-                  <div class="accordion__tab">CHECK!</div>
-                  <div class="accordion__wrapper">
-                    <dl class="accordion__box">
-                      <dt class="accordion__patition">
-                        <span class="accordion__number">01</span>
-                        <span class="accordion__title">2023年3月 大学卒業</span>
-                      </dt>
-                      <dd class="accordion__text">
-                        東海大学理学部物理学科を卒業。専門は物性物理学で、量子コンピュータアルゴリズムを卒業研究で修めました。物理学以外にも、数学、情報数理学、憲法学を修めました。
-                        また、趣味でプログラミングに興味を持ち、Web、機械学習、モバイルアプリ(iOS) などさまざまな分野を経験しました。
-                    </dd>
-                    </dl>
-                  </div>
-                  <label for="workhistory-close-1" class="accordion__button">
-                    <span class="accordion__buttonText">CLOSE</span>
-                  </label>
-                </label>
-              
-              
-                <label class="accordion accordion--2" for="workhistory-open-2">
-                  <input class="accordion__open" id="workhistory-open-2" type="radio" name="acoordion-2">
-                  <input class="accordion__close" id="workhistory-close-2" type="radio" name="acoordion-2">
-                  <div class="accordion__tab">CHECK!</div>
-                  <div class="accordion__wrapper">
-                    <dl class="accordion__box">
-                      <dt class="accordion__patition">
-                        <span class="accordion__number">02</span>
-                        <span class="accordion__title">2023年4月~現在<br>受託系Web企業</span>
-                      </dt>
-                      <dd class="accordion__text">
-                        新卒で現在の企業に就職。iOS(Swift, UIKit, SwiftUI)、Android(Java, Kotlin, AndroidView) を経験。
-                        <ul>
-                            <li>- スポーツニュースアプリの保守</li>
-                            <li>- OMO の iOS アプリの保守</li>
-                            <li>- AIを用いたリフォームアプリの新規開発</li>
-                            <li>- 新卒教育(iOSを担当)</li>
-                        </ul>
-                    </dd>
-                    </dl>
-                  </div>
-                  <label for="workhistory-close-2" class="accordion__button">
-                    <span class="accordion__buttonText">CLOSE</span>
-                  </label>
-                </label>
-              
-              
-                <!-- <label class="accordion accordion--3" for="workhistory-open-3">
-                  <input class="accordion__open" id="workhistory-open-3" type="radio" name="acoordion-3">
-                  <input class="accordion__close" id="workhistory-close-3" type="radio" name="acoordion-3">
-                  <div class="accordion__tab">CHECK!</div>
-                  <div class="accordion__wrapper">
-                    <dl class="accordion__box">
-                      <dt class="accordion__patition">
-                        <span class="accordion__number">03</span>
-                        <span class="accordion__title">CSSの変態になるには？</span>
-                      </dt>
-                      <dd class="accordion__text">何かデザインを見つけたら、まずはとにかくそれをCSSで実装できないか妄想しましょう。ご飯を食べてるときや、お風呂に入っているときはもちろん、ベッドに入ってからは意識が飛ぶまでひたすら思考と妄想をし続けましょう。</dd>
-                    </dl>
-                  </div>
-                  <label for="workhistory-close-3" class="accordion__button">
-                    <span class="accordion__buttonText">CLOSE</span>
-                  </label>
-                </label> -->
-              </div>
-        </section>
-
-        <!--===== CONTACT =====-->
-        <!-- 今後作る予定だが考え中 -->
-        <!-- <section class="contact section" id="contact">
-        <h2 class="section-title">Contact</h2>
-
-        <div class="contact__container bd-grid">
-            <div class="contact__info">
-                <h3 class="contact__subtitle">EMAIL</h3>
-                <span class="contact__text">info.mail.com</span>
-
-                <h3 class="contact__subtitle">PHONE</h3>
-                <span class="contact__text">+20 999-999</span>
-
-                <h3 class="contact__subtitle">ADRESS</h3>
-                <span class="contact__text">My contry</span>
-            </div>
-
-            <form action="" class="contact__form">
-                <div class="contact__inputs">
-                    <input type="text" placeholder="Name" class="contact__input">
-                    <input type="mail" placeholder="Email" class="contact__input">
-                </div>
-
-                <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-
-                <input type="submit" value="Enviar" class="contact__button">
-            </form>
-        </div>
-    </section>-->
-    </main>
-
-    <footer class="footer section">
-        <div class="footer__container bd-grid">
-            <div class="footer__data">
-                <h2 class="footer__title">とんとんぼ</h2>
-                <p class="footer__text">とんとんぼ's website</p>
-            </div>
-
-            <div class="footer__data">
-                <h2 class="footer__title">EXPLORE</h2>
-                <ul>
-                    <li><a href="#home" class="footer__link">Home</a></li>
-                    <li><a href="#about" class="footer__link">About</a></li>
-                    <li><a href="#skills" class="footer__link">Skills</a></li>
-                    <li><a href="#portfolio" class="footer__link">Portfolio</a></li>
-                    <!-- <li><a href="#Contact" class="footer__link">Contact</a></li> -->
-                </ul>
-            </div>
-
-            <div class="footer__data">
-                <h2 class="footer__title">FOLLOW</h2>
-                <a href="https://github.com/KaitoMuraoka" class="footer__social"><i class="ri-github-fill"></i></a>
-                <a href="https://twitter.com/Ktombow1110" class="footer__social"><i class="ri-twitter-x-fill"></i></a>
-                <a href="https://www.linkedin.com/in/ktombow1110/" class="footer__social"><i class="ri-linkedin-box-fill"></i></a>
-                <a href="https://qiita.com/KaitoMuraoka" class="footer__social"><i class="ri-article-line"></i></a>
-                <a href="https://apps.apple.com/jp/developer/kaito-muraoka/id1596462135" class="footer__social"><i class="ri-app-store-line"></i></a>
-            </div>
-        </div>
-    </footer>
-
-
-    <!-- SCROLL REVEAL -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <!-- MAIN JS -->
-    <script src="sets/JS/main.js">
-
-    </script>
 </body>
-
 </html>
