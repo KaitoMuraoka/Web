@@ -32,190 +32,219 @@
 </head>
 
 <body>
-        <!--===== HEADER =====-->
-        <header class="header">
-            <div class="container header__inner">
-                <a href="#" class="header__logo">とんとんぼ</a>
+    <!--===== HEADER (スクロールで表示) =====-->
+    <header class="header" id="header">
+        <div class="container header__inner">
+            <a href="#home" class="header__logo">とんとんぼ</a>
 
-                <div class="header__contact">
-                    <span class="header__status">モバイルアプリ開発のご相談はお気軽に</span>
-                    <a href="https://twitter.com/Ktombow1110" class="header__handle" id="contact-handle">@Ktombow1110</a>
-                    <button type="button" class="header__copy" id="copy-button" data-copy="@Ktombow1110">コピー</button>
+            <div class="contact">
+                <span class="contact__status">モバイルアプリ開発のご相談はお気軽に</span>
+                <span class="slash">/</span>
+                <a href="https://twitter.com/Ktombow1110" class="contact__handle">@Ktombow1110</a>
+                <button type="button" class="copy-button" data-copy="@Ktombow1110">コピー</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!--===== PROFILE =====-->
+        <section class="profile" id="home">
+            <div class="profile__head">
+                <img src="sets/img/tonfly.png" alt="とんとんぼのアイコン" class="profile__avatar">
+                <h1 class="profile__name">とんとんぼ</h1>
+            </div>
+
+            <p class="profile__lead">モバイルアプリの力で、毎日を少し楽しく、少し便利に。</p>
+            <p class="profile__sub">iOS / Android アプリエンジニア。受託系 Web 企業にて開発中。</p>
+
+            <div class="profile__meta">
+                <ul class="inline-list profile__info">
+                    <li>日本</li>
+                    <li>日本語</li>
+                </ul>
+                <ul class="inline-list inline-list--links">
+                    <li><a href="https://twitter.com/Ktombow1110">X</a></li>
+                    <li><a href="https://github.com/KaitoMuraoka">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/ktombow1110/">LinkedIn</a></li>
+                    <li><a href="https://qiita.com/KaitoMuraoka">Qiita</a></li>
+                    <li><a href="https://apps.apple.com/jp/developer/kaito-muraoka/id1596462135">App Store</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="section reveal" id="about">
+            <h2 class="section__title">自己紹介</h2>
+            <div class="about__body">
+                <p>
+                    2023年4月からモバイルアプリエンジニアとして、iOS と Android のアプリケーション開発に携わっています。
+                    特に iOS アプリケーションの開発を得意としており、Swift・UIKit・SwiftUI を用いた実装から保守、新卒教育まで幅広く担当してきました。
+                </p>
+                <p>
+                    モバイルアプリの力で社会課題を解決し、より楽しく、より便利な世の中を作りたい。そんな思いを胸に、日々アプリ開発とアウトプットに取り組んでいます。
+                </p>
+                <p>
+                    個人でもアプリを開発・公開しているほか、勉強会での登壇や技術記事の執筆も行っています。お気軽にお声がけください。
+                </p>
+            </div>
+        </section>
+
+        <!--===== SKILLS =====-->
+        <section class="section reveal" id="skills">
+            <h2 class="section__title">スキル</h2>
+            <div class="tools">
+                <div class="tools__column">
+                    <h3 class="tools__heading">iOS 開発</h3>
+                    <ul class="tools__list">
+                        <li>Swift</li>
+                        <li>UIKit</li>
+                        <li>SwiftUI</li>
+                    </ul>
+                </div>
+                <div class="tools__column">
+                    <h3 class="tools__heading">Android 開発</h3>
+                    <ul class="tools__list">
+                        <li>Kotlin</li>
+                        <li>Java</li>
+                        <li>Flutter</li>
+                    </ul>
+                </div>
+                <div class="tools__column">
+                    <h3 class="tools__heading">基盤・運用</h3>
+                    <ul class="tools__list">
+                        <li>Firebase</li>
+                        <li>GitHub Actions</li>
+                        <li>Xcode</li>
+                    </ul>
                 </div>
             </div>
-        </header>
+        </section>
 
-        <main class="container">
-            <!--===== PROFILE =====-->
-            <section class="profile" id="home">
-                <div class="profile__head">
-                    <img src="sets/img/tonfly.png" alt="とんとんぼのアイコン" class="profile__avatar">
-                    <h1 class="profile__name">とんとんぼ</h1>
-                </div>
-
-                <p class="profile__lead">モバイルアプリの力で、毎日を少し楽しく、少し便利に。</p>
-                <p class="profile__sub">iOS / Android アプリエンジニア。受託系 Web 企業にて開発中。</p>
-
-                <div class="profile__meta">
-                    <ul class="profile__info">
-                        <li>日本</li>
-                        <li>日本語</li>
+        <!--===== PORTFOLIO =====-->
+        <section class="section reveal" id="portfolio">
+            <h2 class="section__title">制作物</h2>
+            <div class="works">
+                <article class="work">
+                    <a href="https://apps.apple.com/jp/app/passwordbox/id6520392403" class="work__thumb work__thumb--1">
+                        <span class="work__thumb-label">PasswordBox</span>
+                    </a>
+                    <h3 class="work__title">PasswordBox ― パスワード生成・管理</h3>
+                    <p class="work__text">
+                        パスワードを生成・管理できるアプリです。既存のパスワードマネージャは管理機能しかないことに気づき、ユーザーが自由にパスワードを扱えるようにしたいと考えて作成しました。
+                    </p>
+                    <ul class="inline-list work__meta">
+                        <li><a href="https://github.com/KaitoMuraoka/PasswordBox">GitHub</a></li>
+                        <li><a href="https://qiita.com/KaitoMuraoka/items/3834482dac0a860a6b44">Qiita</a></li>
+                        <li><a href="https://apps.apple.com/jp/app/passwordbox/id6520392403">App Store</a></li>
                     </ul>
-                    <ul class="profile__links">
-                        <li><a href="https://twitter.com/Ktombow1110">X</a></li>
-                        <li><a href="https://github.com/KaitoMuraoka">GitHub</a></li>
-                        <li><a href="https://www.linkedin.com/in/ktombow1110/">LinkedIn</a></li>
-                        <li><a href="https://qiita.com/KaitoMuraoka">Qiita</a></li>
-                        <li><a href="https://apps.apple.com/jp/developer/kaito-muraoka/id1596462135">App Store</a></li>
+                </article>
+
+                <article class="work">
+                    <a href="https://apps.apple.com/jp/app/osushi/id6480398872" class="work__thumb work__thumb--2">
+                        <span class="work__thumb-label">Osushi</span>
+                    </a>
+                    <h3 class="work__title">Osushi Mobile ― 技術記事リーダー</h3>
+                    <p class="work__text">
+                        iOS Osushi のモバイルアプリ版です。投稿された記事を閲覧でき、お気に入りに登録するとオフラインでも読むことができます。
+                    </p>
+                    <ul class="inline-list work__meta">
+                        <li><a href="https://ios-osushi.github.io">iOS Osushi</a></li>
+                        <li><a href="https://github.com/ios-osushi/Osushi-iOS?tab=readme-ov-file">GitHub</a></li>
+                        <li><a href="https://apps.apple.com/jp/app/osushi/id6480398872">App Store</a></li>
                     </ul>
-                </div>
-            </section>
-
-            <!--===== ABOUT =====-->
-            <section class="section" id="about">
-                <h2 class="section__title">自己紹介</h2>
-                <div class="about__body">
-                    <p>
-                        2023年4月からモバイルアプリエンジニアとして、iOS と Android のアプリケーション開発に携わっています。
-                        特に iOS アプリケーションの開発を得意としており、Swift・UIKit・SwiftUI を用いた実装から保守、新卒教育まで幅広く担当してきました。
-                    </p>
-                    <p>
-                        モバイルアプリの力で社会課題を解決し、より楽しく、より便利な世の中を作りたい。そんな思いを胸に、日々アプリ開発とアウトプットに取り組んでいます。
-                    </p>
-                    <p>
-                        個人でもアプリを開発・公開しているほか、勉強会での登壇や技術記事の執筆も行っています。お気軽にお声がけください。
-                    </p>
-                </div>
-            </section>
-
-            <!--===== SKILLS =====-->
-            <section class="section" id="skills">
-                <h2 class="section__title">スキル</h2>
-                <div class="tools">
-                    <div class="tools__column">
-                        <h3 class="tools__heading">iOS 開発</h3>
-                        <ul class="tools__list">
-                            <li>Swift</li>
-                            <li>UIKit</li>
-                            <li>SwiftUI</li>
-                        </ul>
-                    </div>
-                    <div class="tools__column">
-                        <h3 class="tools__heading">Android 開発</h3>
-                        <ul class="tools__list">
-                            <li>Kotlin</li>
-                            <li>Java</li>
-                            <li>Flutter</li>
-                        </ul>
-                    </div>
-                    <div class="tools__column">
-                        <h3 class="tools__heading">基盤・運用</h3>
-                        <ul class="tools__list">
-                            <li>Firebase</li>
-                            <li>GitHub Actions</li>
-                            <li>Xcode</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <!--===== PORTFOLIO =====-->
-            <section class="section" id="portfolio">
-                <h2 class="section__title">制作物</h2>
-                <div class="works">
-                    <article class="work">
-                        <a href="https://apps.apple.com/jp/app/passwordbox/id6520392403" class="work__thumb work__thumb--1">
-                            <span class="work__thumb-label">PasswordBox</span>
-                        </a>
-                        <h3 class="work__title">PasswordBox ― パスワード生成・管理</h3>
-                        <p class="work__text">
-                            パスワードを生成・管理できるアプリです。既存のパスワードマネージャは管理機能しかないことに気づき、ユーザーが自由にパスワードを扱えるようにしたいと考えて作成しました。
-                        </p>
-                        <ul class="work__links">
-                            <li><a href="https://github.com/KaitoMuraoka/PasswordBox">GitHub</a></li>
-                            <li><a href="https://qiita.com/KaitoMuraoka/items/3834482dac0a860a6b44">Qiita</a></li>
-                            <li><a href="https://apps.apple.com/jp/app/passwordbox/id6520392403">App Store</a></li>
-                        </ul>
-                    </article>
-
-                    <article class="work">
-                        <a href="https://apps.apple.com/jp/app/osushi/id6480398872" class="work__thumb work__thumb--2">
-                            <span class="work__thumb-label">Osushi</span>
-                        </a>
-                        <h3 class="work__title">Osushi Mobile ― iOS Osushi 公式アプリ</h3>
-                        <p class="work__text">
-                            <a href="https://ios-osushi.github.io">iOS Osushi</a> のモバイルアプリ版です。投稿された記事を閲覧でき、お気に入りに登録するとオフラインでも読むことができます。
-                        </p>
-                        <ul class="work__links">
-                            <li><a href="https://github.com/ios-osushi/Osushi-iOS?tab=readme-ov-file">GitHub</a></li>
-                            <li><a href="https://apps.apple.com/jp/app/osushi/id6480398872">App Store</a></li>
-                        </ul>
-                    </article>
-                </div>
-            </section>
-
-            <!--===== SPEAKING =====-->
-            <section class="section" id="speaking">
-                <h2 class="section__title">登壇</h2>
-                <ul class="timeline">
-                    <li class="timeline__item">
-                        <span class="timeline__date">2023</span>
-                        <div>
-                            <h3 class="timeline__title">Swift 愛好会 vol.74 ＠オンライン</h3>
-                            <p class="timeline__text">社会人になって初めての登壇。「JSONEncoder で詰まった話」についてお話ししました。</p>
-                            <ul class="work__links">
-                                <li><a href="https://love-swift.connpass.com/event/283601/">イベント</a></li>
-                                <li><a href="https://note.com/ktombow1110/n/n5bc336fd1287">振り返り記事</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="timeline__item">
-                        <span class="timeline__date">2024</span>
-                        <div>
-                            <h3 class="timeline__title">Swift 愛好会スピンオフ WWDC24 セッション要約会 ＠ DeNA</h3>
-                            <p class="timeline__text">WWDC24 の要約会にて、Xcode 16 について登壇しました。</p>
-                            <ul class="work__links">
-                                <li><a href="https://love-swift.connpass.com/event/319801/">イベント</a></li>
-                                <li><a href="https://note.com/ktombow1110/n/n09c900e6e125">振り返り記事</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-
-            <!--===== WORK HISTORY =====-->
-            <section class="section" id="history">
-                <h2 class="section__title">経歴</h2>
-                <ul class="timeline">
-                    <li class="timeline__item">
-                        <span class="timeline__date">2023.04 ―</span>
-                        <div>
-                            <h3 class="timeline__title">受託系 Web 企業　モバイルアプリエンジニア</h3>
-                            <p class="timeline__text">
-                                新卒で入社。iOS（Swift / UIKit / SwiftUI）、Android（Java / Kotlin / Android View）を経験。
-                                スポーツニュースアプリの保守、OMO の iOS アプリの保守、AI を用いたリフォームアプリの新規開発、新卒教育（iOS 担当）などに従事。
-                            </p>
-                        </div>
-                    </li>
-                    <li class="timeline__item">
-                        <span class="timeline__date">2023.03</span>
-                        <div>
-                            <h3 class="timeline__title">東海大学 理学部 物理学科 卒業</h3>
-                            <p class="timeline__text">
-                                専門は物性物理学。卒業研究では量子コンピュータアルゴリズムに取り組みました。物理学のほか、数学・情報数理学・憲法学を修め、趣味として Web・機械学習・iOS などのプログラミングにも親しみました。
-                            </p>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-        </main>
-
-        <footer class="footer">
-            <div class="container footer__inner">
-                <span>© とんとんぼ</span>
-                <a href="#home">ページの先頭へ</a>
+                </article>
             </div>
-        </footer>
+        </section>
+
+        <!--===== SPEAKING =====-->
+        <section class="section reveal" id="speaking">
+            <h2 class="section__title">登壇</h2>
+            <div class="history">
+                <article class="history__item">
+                    <div class="history__head">
+                        <h3 class="history__title">Swift 愛好会 vol.74<span class="slash">/</span><span class="history__role">オンライン</span></h3>
+                        <span class="history__date">2023</span>
+                    </div>
+                    <ul class="history__list">
+                        <li>社会人になって初めての登壇。「JSONEncoder で詰まった話」についてお話ししました。</li>
+                    </ul>
+                    <ul class="inline-list work__meta history__links">
+                        <li><a href="https://love-swift.connpass.com/event/283601/">イベントページ</a></li>
+                        <li><a href="https://note.com/ktombow1110/n/n5bc336fd1287">振り返り記事</a></li>
+                    </ul>
+                </article>
+                <article class="history__item">
+                    <div class="history__head">
+                        <h3 class="history__title">WWDC24 セッション要約会<span class="slash">/</span><span class="history__role">DeNA</span></h3>
+                        <span class="history__date">2024</span>
+                    </div>
+                    <ul class="history__list">
+                        <li>Swift 愛好会スピンオフとして開催された WWDC24 の要約会にて、Xcode 16 について登壇しました。</li>
+                    </ul>
+                    <ul class="inline-list work__meta history__links">
+                        <li><a href="https://love-swift.connpass.com/event/319801/">イベントページ</a></li>
+                        <li><a href="https://note.com/ktombow1110/n/n09c900e6e125">振り返り記事</a></li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!--===== WORK HISTORY =====-->
+        <section class="section reveal" id="history">
+            <h2 class="section__title">経歴</h2>
+            <div class="history">
+                <article class="history__item">
+                    <div class="history__head">
+                        <h3 class="history__title">受託系 Web 企業<span class="slash">/</span><span class="history__role">モバイルアプリエンジニア</span></h3>
+                        <span class="history__date">2023年4月 - 現在</span>
+                    </div>
+                    <ul class="history__list">
+                        <li>iOS（Swift / UIKit / SwiftUI）と Android（Java / Kotlin / Android View）の開発を担当。</li>
+                        <li>スポーツニュースアプリ、OMO の iOS アプリの保守・運用。</li>
+                        <li>AI を用いたリフォームアプリの新規開発。</li>
+                        <li>新卒エンジニア向け研修の iOS パートを担当。</li>
+                    </ul>
+                </article>
+                <article class="history__item">
+                    <div class="history__head">
+                        <h3 class="history__title">東海大学<span class="slash">/</span><span class="history__role">理学部 物理学科</span></h3>
+                        <span class="history__date">2023年3月 卒業</span>
+                    </div>
+                    <ul class="history__list">
+                        <li>物性物理学を専攻し、卒業研究で量子コンピュータアルゴリズムに取り組む。</li>
+                        <li>物理学のほか、数学・情報数理学・憲法学を履修。</li>
+                        <li>趣味として Web・機械学習・iOS などのプログラミングを経験。</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div>
+                    <p class="footer__name">とんとんぼ</p>
+                    <p class="footer__status">モバイルアプリ開発のご相談はお気軽に</p>
+                </div>
+                <div class="contact">
+                    <a href="https://twitter.com/Ktombow1110" class="contact__handle">@Ktombow1110</a>
+                    <button type="button" class="copy-button" data-copy="@Ktombow1110">コピー</button>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <ul class="inline-list inline-list--links">
+                    <li><a href="https://twitter.com/Ktombow1110">X</a></li>
+                    <li><a href="https://github.com/KaitoMuraoka">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/ktombow1110/">LinkedIn</a></li>
+                    <li><a href="https://qiita.com/KaitoMuraoka">Qiita</a></li>
+                    <li><a href="https://apps.apple.com/jp/developer/kaito-muraoka/id1596462135">App Store</a></li>
+                </ul>
+                <p class="footer__copy">© とんとんぼ</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="sets/JS/main.js"></script>
 </body>
