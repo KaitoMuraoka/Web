@@ -1,8 +1,5 @@
 /*===== VARIABLES =====*/
 :root {
-  --bg-outer: #d9765a;
-  --bg-layer-1: #c9694e;
-  --bg-layer-2: #d06f53;
   --paper: #f7f1ea;
   --ink: #1f1a17;
   --ink-sub: #5f5650;
@@ -22,9 +19,7 @@ html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
-  min-height: 100vh;
-  padding: 72px 24px 0;
-  background: var(--bg-outer);
+  background: var(--paper);
   color: var(--ink);
   font-family: var(--font-mincho);
   font-size: 15px;
@@ -37,41 +32,6 @@ h1, h2, h3, p, ul { margin: 0; }
 ul { padding: 0; list-style: none; }
 a { color: inherit; text-decoration: none; }
 img { display: block; max-width: 100%; }
-
-/*===== SHEET (重なった紙) =====*/
-.sheet {
-  position: relative;
-  max-width: 1080px;
-  margin: 0 auto;
-  background: var(--paper);
-  min-height: calc(100vh - 72px);
-}
-
-.sheet::before,
-.sheet::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  z-index: -1;
-}
-
-/* 奥の紙 */
-.sheet::before {
-  top: -44px;
-  height: 44px;
-  margin: 0 4.5%;
-  background: var(--bg-layer-1);
-}
-
-/* 手前の紙 */
-.sheet::after {
-  top: -24px;
-  height: 24px;
-  margin: 0 3%;
-  background: var(--bg-layer-2);
-  box-shadow: 0 -1px 0 rgba(0, 0, 0, .04);
-}
 
 .container {
   display: block;
@@ -380,11 +340,6 @@ img { display: block; max-width: 100%; }
 
 /*===== RESPONSIVE =====*/
 @media (max-width: 720px) {
-  body { padding: 48px 12px 0; }
-
-  .sheet::before { top: -32px; height: 32px; }
-  .sheet::after { top: -18px; height: 18px; }
-
   .container { padding: 0 16px; }
 
   .header__status { display: none; }
